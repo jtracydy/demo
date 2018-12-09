@@ -4,6 +4,8 @@
 package com.example.demo.entity;
 
 import lombok.Data;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
