@@ -5,7 +5,7 @@
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
     <property name="APP_NAME" value="lightsword"/>
     <contextName>${APP_NAME}</contextName>
-    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+   <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
    <!-- <jmxConfigurator/>-->
 
@@ -16,20 +16,25 @@
 
     <appender name="dailyRollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${user.home}/logs/${APP_NAME}</File>
+
+        <!-- 切分文件日志 -->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- daily rolling over -->
             <FileNamePattern>${APP_NAME}.%d{yyyy-MM-dd}.log</FileNamePattern>
             <!-- keep 30 days' log history -->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
+
+        <!-- ThresholdFilter是 logback定义的日志打印级别的过滤器-->
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>ERROR</level>
         </filter>
+
         <encoder>
             <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</Pattern>
         </encoder>
     </appender>
-    <!--TRACE, DEBUG, INFO, WARN, ERROR-->
+    <!--root节点是必选节点，用来指定最基础的日志输出级别，只有一个level属性 TRACE, DEBUG, INFO, WARN, ERROR-->
     <root level="DEBUG">
         <appender-ref ref="CONSOLE"/>
         <!--<appender-ref ref="FILE"/>-->
