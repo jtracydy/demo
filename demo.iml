@@ -69,9 +69,9 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.9.7" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-tomcat:2.1.0.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.12" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.12" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:9.0.12" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:8.0.53" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:8.0.53" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-websocket:8.0.53" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.validator:hibernate-validator:6.0.13.Final" level="project" />
     <orderEntry type="library" name="Maven: javax.validation:validation-api:2.0.1.Final" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:5.1.2.RELEASE" level="project" />
@@ -107,5 +107,6 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:5.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:5.1.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.12" level="project" />
+    <orderEntry type="library" scope="TEST" name="Maven: com.google.guava:guava:20.0" level="project" />
   </component>
 </module>

@@ -14,13 +14,9 @@ import org.springframework.test.context.web.WebAppConfiguration;
  * @version $Id$
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-//@SpringJUnit4ClassRunnerSpringBootApplication
 @SpringBootTest(classes = ReadingListApplication.class)
 @WebAppConfiguration
 public class BaseTest {
 
-    @Test
-    public void test(){
 
-    }
 }
